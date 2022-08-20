@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Dmart Sale</title>
+</head>
+<body>
+    <h1>D-Mart Sale Prediction</h1>
+    <form action="/predict" method="POST">
+        
+        <label>Item_Weight</label> <input type="text" name="Item_Weight"> <br><br>
+
+        <label>Item_Fat_Content</label> 
+        <select name="Item_Fat_Content">   
+            <option value="0">Low Fat</option>
+            <option value="1">Regular</option>
+        </select> <br><br><br>
+        
+        
+        <label>Item_Visibility</label> <input type="text" name="Item_Visibility"> <br><br>
+        <label>Item_MRP</label> <input type="text" name="Item_MRP"> <br><br>
+ 
+
+        <label>Outlet_Size</label> 
+        <select name="Outlet_Size">   
+            <option value="0">Small</option>
+            <option value="1">Medium</option>
+            <option value="2">High</option>
+        </select> <br><br><br>
+
+        <label>Outlet_Location_Type</label> 
+        <select name="Outlet_Location_Type">   
+            <option value="0">Supermarket Type1</option>
+            <option value="1">Supermarket Type2</option>
+            <option value="2">Supermarket Type3</option>
+            <option value="3">Grocery Store</option>
+        </select> <br><br><br>
+
+                
+        <label>Outlet_Type</label> 
+        <select name="Outlet_Type">   
+            <option value="0">Tier 1</option>
+            <option value="1">Tier 2</option>
+            <option value="2">Tier 3</option>
+        </select> <br><br><br>
+
+        <label>Outlet_Age</label> <input type="text" name="Outlet_Age"> <br><br>
+
+        <label>Item_Type</label> 
+        <select name="Item_Type">   
+            <option value="Item_Type_Baking Goods">Item_Type_Baking Goods</option>
+            <option value="Item_Type_Breads">Item_Type_Breads</option>
+            <option value="Item_Type_Breakfast">Item_Type_Breakfast</option>
+            <option value="Item_Type_Dairy">Item_Type_Dairy</option>
+            <option value="Item_Type_Canned">Item_Type_Canned</option>
+            <option value="Item_Type_Frozen Foods">Item_Type_Frozen Foods</option>
+            <option value="Item_Type_Fruits and Vegetables">Item_Type_Fruits and Vegetables</option>
+            <option value="Item_Type_Hard Drinks">Item_Type_Hard Drinks</option>
+            <option value="Item_Type_Health and Hygiene">Item_Type_Health and Hygiene</option>
+            <option value="Item_Type_Household">Item_Type_Household</option>
+            <option value="Item_Type_Meat">Item_Type_Meat</option>
+            <option value="Item_Type_Others">Item_Type_Others</option>
+            <option value="Item_Type_Seafood">Item_Type_Seafood</option>
+            <option value="Item_Type_Snack Foods">Item_Type_Snack Foods</option>
+            <option value="Item_Type_Soft Drinks">Item_Type_Soft Drinks</option>
+            <option value="Item_Type_Starchy Foods">Item_Type_Starchy Foods</option>
+           
+        </select> <br><br><br>
+        <input type="submit"><br><br>
+
+        
+        
+    </form>
+
+    <h3 style="background-color:Tomato;">Predicted Sale Prize = {{result}}</h3>
+
+
+    
+</body>
+</html>
