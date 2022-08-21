@@ -1,7 +1,6 @@
 
 import json
 import numpy as np
-import json
 import pickle
 from flask import Flask, render_template,request
 
